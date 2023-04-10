@@ -13,19 +13,25 @@
 
 <body>
   <!-- navigation -->
-  <nav class="navbar bg-primary-subtle" id="navBtns">
+  <nav class="navbar" id="navBtns">
     <ul class="nav menu">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-        <div class="hidden view-box" id="home">
-          <p>I am the home content</p>
+        <a class="nav-link" id="homeBtn" href="#">Home</a>
+        <div class="hidden" id="home">
+          <p class="view-box">I am the home content</p>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="about" href="#">About</a>
+        <a class="nav-link" id="aboutBtn" href="#">About</a>
+        <div class="hidden" id="about">
+          <p class="view-box">I am the about content</p>
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="joke" href="#">Funny Joke</a>
+        <a class="nav-link" id="jokeBtn" href="#">Funny Joke</a>
+        <div class="hidden" id="joke">
+          <p class="view-box">A pony with a cough is just a little horse.</p>
+        </div>
       </li>
     </ul>
   </nav>
@@ -35,6 +41,7 @@
   <!-- about -->
 
   <!-- funny joke -->
+
   <script src="main.js"></script>
 </body>
 

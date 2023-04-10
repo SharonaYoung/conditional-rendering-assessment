@@ -5,3 +5,11 @@
 .show {
   display: block;
 }
+
+.view-box {
+  position: absolute;
+  left: 1.5rem;
+  font-size: 2rem;
+  padding: 2.5rem;
+  border: 2px dotted #fca2c4;
+}

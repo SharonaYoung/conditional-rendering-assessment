@@ -1,16 +1,26 @@
 const navBtns = document.querySelector('#navBtns');
-const navBtn = document.querySelector('.navBtn');
+const homeBtn = document.querySelector('#homeBtn');
 const home = document.querySelector('#home');
-const tog = document.querySelector('.tog');
+const aboutBtn = document.querySelector('#aboutBtn');
+const about = document.querySelector('#about');
+const jokeBtn = document.querySelector('#jokeBtn');
+const joke = document.querySelector('#joke');
 
-navBtns.addEventListener('click', function(event){
-  if(event.target.matches('a')){
-    console.log('nav btn pushed');
-
-    home.classList.add('show');
-  }
+homeBtn.addEventListener('click', function(){
+    home.classList.toggle('show');
+    about.classList.remove('show');
+    joke.classList.remove('show');
 })
 
-tog.addEventListener('click', function(){
-  home.classList.toggle('show');
+aboutBtn.addEventListener('click', function(){
+  about.classList.toggle('show');
+  home.classList.remove('show');
+  joke.classList.remove('show');
 })
+
+jokeBtn.addEventListener('click', function(){
+  joke.classList.toggle('show');
+  about.classList.remove('show');
+  home.classList.remove('show');
+})
+
